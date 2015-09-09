@@ -1,32 +1,25 @@
 
 var pigLatin = function(input) {
-
-  var word = input.split('');
   var vowels = ['a', 'e', 'i', 'o', 'u'];
-  for (var i=0; i < vowels.length; i++) {
-    if (vowels[i] === word[0]) {
-      var result = word.join('') + 'ay';
+  for (var i=0; i < input.length; i++) {
+    if ((vowels.indexOf(input[i])) != -1) {
+      var slice_here = i;
+      var first_half = input.slice(0, slice_here);
+      var second_half = input.slice(slice_here, input.length);
+      var result = second_half + first_half + "ay";
       return result;
-    } else {
-        for (var i=0; i < vowels.length; i++) {
-          if (vowels[i] !== word[0]) {
-            var wordslice = word + word.shift();
-            var result = wordslice.replace(/,/g, '') + 'ay';
-          }
-
-            return result;
-          }
-        }
-      }
     }
+  }
+}
 
+$(document).ready(function() {
+  $("form#pig-latin").submit(function(event) {
+    var word = $("input#word").val();
+    var result = pigLatin(word);
 
+    $(".word").text(word);
 
-// if ((input[0] == "a") || (input[0] == "e") || (input[0] == "i") || (input[0] == "u") || (input[0] == "o")) {
-//
-//   var result = input + ay;
-//   return result;
-// } else if ((input[0] !== "a") || (input[0] !== "e") || (input[0] !== "i") || (input[0] !== "u") || (input[0] !== "o")) {
-//     var first = input.slice(1);
-//     var second = input[0];
-//     var result =  first + second + ay;
+    $("#result").show();
+    event.preventDefault();
+  });
+});
