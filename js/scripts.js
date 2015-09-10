@@ -13,11 +13,12 @@ var pigLatin = function(input) {
 }
 
 $(document).ready(function() {
-  $("form#pig-latin").submit(function(event) {
+  $("form#piglatin").submit(function(event) {
     var word = $("input#word").val();
     var result = pigLatin(word);
 
     $(".word").text(word);
+    $(".result").text(result);
 
     $("#result").show();
     event.preventDefault();
