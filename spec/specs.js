@@ -10,4 +10,8 @@ describe('pigLatin', function() {
   it("move the first and second letters if the word starts with consonant", function() {
     expect(pigLatin("crazy")).to.equal("azycray");
   })
+
+  it("if the word starts with 'qu' move the q and the u to the end", function() {
+      expect(pigLatin("squeal")).to.equal("ealsquay");
+  })
 })

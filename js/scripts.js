@@ -1,12 +1,16 @@
 
-var pigLatin = function(input) {
+var pigLatin = function(word) {
   var vowels = ['a', 'e', 'i', 'o', 'u'];
-  for (var i=0; i < input.length; i++) {
-    if ((vowels.indexOf(input[i])) != -1) {
-      var slice_here = i;
-      var first_half = input.slice(0, slice_here);
-      var second_half = input.slice(slice_here, input.length);
-      var result = second_half + first_half + "ay";
+  for (var i=0; i < word.length; i++) {
+    if ((vowels.indexOf(word[i])) != -1) {
+      if ((word[i] === "u") && (word[i-1] === "q")) {
+        var slice_here = i + 1;
+      } else {
+        var slice_here = i;
+      }
+      var first_half = word.slice(0, slice_here);
+      var second_half = word.slice(slice_here, word.length);
+      var result = second_half + first_half + 'ay';
       return result;
     }
   }
@@ -22,5 +26,6 @@ $(document).ready(function() {
 
     $("#result").show();
     event.preventDefault();
+
   });
 });
