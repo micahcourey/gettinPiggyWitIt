@@ -14,7 +14,7 @@ var pigLatin = function(word) {
       return result;
     }
   }
-}
+};
 
 $(document).ready(function() {
   $("form#piglatin").submit(function(event) {
