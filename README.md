@@ -11,7 +11,7 @@ _A web app that translates english words into Pig Latin_
 ## Setup
 
 * _Clone Repository from GitHub._
-* _Open the triangle_tracker.html file in your web browser_
+* _Open the piglatin.html file in your web browser_
 
 ## Technologies Used
 
