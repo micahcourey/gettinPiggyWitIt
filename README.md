@@ -6,7 +6,7 @@
 
 ## Description
 
-_A web app that translates english words into Pig Latin_
+_A web app that translates english words into Pig Latin. Check it out at: http://micahcourey.github.io/PigLatinTranslator_
 
 ## Setup
 
