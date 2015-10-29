@@ -3,7 +3,7 @@ gettin' piggy wit it
 
 By Micah Courey, 10-Sep-2015
 
-A English to Pig Latin Translator
+A English to Pig Latin Translator. Check it out at: http://micahcourey.github.io/PigLatinTranslator/
 
 Setup
 ----------
