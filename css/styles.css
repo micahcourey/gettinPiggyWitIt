@@ -1,7 +1,36 @@
+@import url(https://fonts.googleapis.com/css?family=Condiment);
+
 #result {
   display: none;
 }
 
-p {
-  font-size: 1.2em;
+body {
+  background-color: #050D20;
+  color: #EDF2F4;
+  font-family: 'Condiment', cursive;
+}
+
+.btn {
+  background-color: #521945;
+}
+
+.btn:hover {
+  color: #FFA630;
+}
+
+h1 {
+  font-size: 3.4em;
+  margin-bottom: 30px
+}
+
+p, label {
+  font-size: 1.6em;
+  margin-bottom: 16px;
+}
+
+
+img {
+  margin-top: 60px;
+  margin-bottom: 20px;
+  border-radius: 10px;
 }
