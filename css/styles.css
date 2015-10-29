@@ -24,7 +24,7 @@ h1 {
   margin-bottom: 30px
 }
 
-p, label {
+p, label, input {
   font-size: 1.6em;
   margin-bottom: 16px;
 }
