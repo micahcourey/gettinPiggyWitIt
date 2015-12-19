@@ -11,6 +11,7 @@ var pigLatin = function(word) {
       var first_half = word.slice(0, slice_here);
       var second_half = word.slice(slice_here, word.length);
       var result = second_half + first_half + 'ay';
+
       return result;
     }
   }
